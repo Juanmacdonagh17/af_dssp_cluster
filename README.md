@@ -25,7 +25,7 @@ The script:
 4. 
 ```bash
 chmod u+x run_and_request_prl.sh
-./pull_and_run_af_disorder.sh
+./run_and_request_prl.sh
    ```
 For each .pdb downloaded, a corresponding *_pred.tsv with disorder predictions will be created in the same folder. It uses, by default, 10 jobs, you can change this inside the script. 
 This script uses [`alphafold_disorder.py`](https://github.com/BioComputingUP/AlphaFold-disorder), developed by the BioComputingUP group. All credits goes to them. 
