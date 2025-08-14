@@ -22,7 +22,7 @@ The script:
 
 
 3. Run the script:
-4. 
+
 ```bash
 chmod u+x run_and_request_prl.sh
 ./run_and_request_prl.sh
