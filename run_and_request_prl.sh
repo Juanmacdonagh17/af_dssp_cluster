@@ -24,7 +24,7 @@ cat "$ID_FILE" | xargs -n1 -P "$JOBS" -I{} sh -c '
     "https://alphafold.ebi.ac.uk/files/${file}" || rm -f "$file"
 '
 
-find . -maxdepth 1 -name 'AF-*-F1-model_v4.pdb' -print0 | \
+find . -maxdepth 1 -name 'AF-*-F1-model_v6.pdb' -print0 | \
 xargs -0 -n1 -P "$JOBS" -I{} sh -c '
   in="{}"
   base=$(basename "$in" .pdb)
