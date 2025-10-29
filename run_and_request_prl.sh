@@ -18,7 +18,7 @@ chmod u+x alphafold_disorder.py
 
 cat "$ID_FILE" | xargs -n1 -P "$JOBS" -I{} sh -c '
   id="{}"
-  file="AF-${id}-F1-model_v4.pdb"
+  file="AF-${id}-F1-model_v6.pdb"
   [ -s "$file" ] && exit 0
   curl -fsS --retry 3 -o "$file" \
     "https://alphafold.ebi.ac.uk/files/${file}" || rm -f "$file"
